@@ -5,32 +5,28 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    github: "#",
-    demo: "#"
+    title: "Bearings Management System UI",
+    description: "Bearing Management UI is a Blazor Web Assembly Standalone frontend application for managing bearings data. It interacts with the Bearing Management API and provides a user-friendly interface for authentication, viewing, adding, updating, and deleting bearings.",
+    tech: ["Blazor", "Radzen Components", "SQLite", "RefitClient", ".NET 9.0"],
+    github: "https://github.com/janegarciu/BearingManagementSystemUI",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task management application with real-time updates and team features.",
-    tech: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-    github: "#",
-    demo: "#"
+    title: "Flight Booking App",
+    description: "Flight booking microservices based application.",
+    tech: ["Java", "Spring Boot", "Spring Cloud", "Spring Data", "Scala(cache microservice)", "PostgreSQL", "EhCache"],
+    github: "https://github.com/janegarciu/PAD/tree/master/FlightBookingSystem/Flight-App-Microservices",
   },
   {
-    title: "AI Chat Application",
-    description: "Real-time chat application with AI-powered responses and message analytics.",
-    tech: ["React", "Python", "OpenAI", "WebSocket"],
-    github: "#",
-    demo: "#"
+    title: "CSV Parser",
+    description: "Parse people defined in a csv file and save them into the database table.",
+    tech: ["Java", "JDK", "TailwindCSS"],
+    github: "https://github.com/janegarciu/CSV",
   },
   {
-    title: "Portfolio Builder",
-    description: "No-code portfolio builder with customizable templates and drag-and-drop editor.",
-    tech: ["Vue.js", "Firebase", "TailwindCSS"],
-    github: "#",
-    demo: "#"
+    title: "Scala Actor Model App",
+    description: "Scala based project implementing Actor System Model using akka-actor-typed-- library. This project is aimed to develop a good comprehension of Scala language and Akka framework as well as understanding of actor's concurrency capabilities.",
+    tech: ["Scala", "Akka"],
+    github: "https://github.com/janegarciu/RTP/tree/main/ActorModel",
   }
 ];
 
@@ -40,7 +36,7 @@ const Projects = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12 animate-slide-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
-          <p className="text-muted-foreground text-lg">Some of my recent work</p>
+          <p className="text-muted-foreground text-lg">Some of my works</p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
@@ -62,13 +58,9 @@ const Projects = () => {
               </div>
               
               <div className="flex gap-3">
-                <Button variant="outline" size="sm" className="flex-1">
+                <Button variant="outline" size="sm" className="flex-1" onClick={() => window.open(project.github, "_blank")}>
                   <Github />
                   Code
-                </Button>
-                <Button variant="default" size="sm" className="flex-1">
-                  <ExternalLink />
-                  Demo
                 </Button>
               </div>
             </Card>

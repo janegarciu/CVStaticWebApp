@@ -2,10 +2,10 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const skills = {
-  "Frontend": ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js"],
-  "Backend": ["Node.js", "Python", "PostgreSQL", "MongoDB", "Redis"],
-  "Tools": ["Git", "Docker", "AWS", "CI/CD", "Kubernetes"],
-  "Other": ["REST APIs", "GraphQL", "Testing", "Agile", "UI/UX Design"]
+  "Frontend": ["Blazor", "JavaScript", "Bootstrap CSS", "Tailwind CSS", "Radzen", "React"],
+  "Backend": ["C#", ".NET", "ASP.NET", "EntityFramework", "Dapper", "PostgreSQL", "MSSQL", "MongoDB", "Redis"],
+  "Tools": ["Git", "Docker", "Azure", "ElasticSearch", "Grafana", "RabbitMQ"],
+  "Other": ["REST APIs", "Testing", "Agile", "UI/UX Design"]
 };
 
 const Skills = () => {

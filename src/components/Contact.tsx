@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -21,26 +21,22 @@ const Contact = () => {
               </div>
               <div className="flex-1">
                 <p className="font-medium">Email</p>
-                <a href="mailto:your.email@example.com" className="text-muted-foreground hover:text-primary transition-colors">
-                  your.email@example.com
+                <a href="mailto:jeniagarciu@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  jeniagarciu@gmail.com
                 </a>
               </div>
             </div>
             
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-6">
-              <Button variant="outline" size="lg" className="flex-col h-auto py-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6" onClick={() => window.open("https://github.com/janegarciu", "_blank")}>
+              <Button variant="outline" size="lg" className="flex-col h-auto py-4" >
                 <Github className="w-6 h-6 mb-2" />
                 <span className="text-xs">GitHub</span>
               </Button>
-              <Button variant="outline" size="lg" className="flex-col h-auto py-4">
+              <Button variant="outline" size="lg" className="flex-col h-auto py-4" onClick={() => window.open("http://linkedin.com/in/eugenie-garciu-a96434173", "_blank")}>
                 <Linkedin className="w-6 h-6 mb-2" />
                 <span className="text-xs">LinkedIn</span>
               </Button>
-              <Button variant="outline" size="lg" className="flex-col h-auto py-4">
-                <Twitter className="w-6 h-6 mb-2" />
-                <span className="text-xs">Twitter</span>
-              </Button>
-              <Button variant="outline" size="lg" className="flex-col h-auto py-4">
+              <Button variant="outline" size="lg" className="flex-col h-auto py-4" onClick={() => window.open("https://mail.google.com", "_blank")}>
                 <Mail className="w-6 h-6 mb-2" />
                 <span className="text-xs">Email</span>
               </Button>
@@ -49,7 +45,7 @@ const Contact = () => {
         </Card>
         
         <div className="text-center mt-12 text-muted-foreground">
-          <p>© 2025 Your Name. Built with React & Tailwind CSS.</p>
+          <p>© 2025 Eugenie Garciu. Built with React & Tailwind CSS.</p>
         </div>
       </div>
     </section>

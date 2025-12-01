@@ -38,7 +38,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
               <a key={item.href} href={item.href}>
-                <Button variant="ghost" className="text-foreground hover:text-primary">
+                <Button variant="ghost" className="text-foreground hover:text-foreground">
                   {item.label}
                 </Button>
               </a>
@@ -66,7 +66,7 @@ const Navigation = () => {
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <Button variant="ghost" className="w-full justify-start text-foreground hover:text-primary">
+                  <Button variant="ghost" className="w-full justify-start text-foreground hover:text-foreground">
                     {item.label}
                   </Button>
                 </a>

@@ -3,36 +3,55 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Company Inc.",
-    period: "2022 - Present",
-    description: "Leading development of scalable web applications using React and Node.js. Mentoring junior developers and implementing best practices.",
+    title: ".NET Full-Stack Developer",
+    company: "ABF",
+    location: "Roosendaal, The Netherlands",
+    period: "2025 - Present",
+    description: "Developed and maintained new and existing features for an eCommerce microservices project.",
     achievements: [
-      "Improved application performance by 40%",
-      "Led team of 5 developers",
-      "Implemented CI/CD pipeline"
+      "Delivered 10+ new features for an eCommerce microservices platform using .NET 9, ASP.NET Core, and MSSQL.",
+      "Optimized API performance using caching and async patterns, reducing request latency by 40%",
+      "Built 15+ Blazor UI components following Figma designs, increasing user interaction speed by 25%.",
+      "Monitored distributed systems with Grafana and ServicePulse, improving system observability."
     ]
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    period: "2020 - 2022",
-    description: "Developed and maintained multiple client projects using modern web technologies.",
+    title: ".NET Developer",
+    company: "Software Mind(DataStation)",
+    location: "Chișinău, Republic of Moldova",
+    period: "2023 - 2025",
+    description: "Gained valuable experience developing Blazor Server Compliance Management System.",
     achievements: [
-      "Built 10+ production applications",
-      "Reduced deployment time by 60%",
-      "Introduced automated testing"
+      "Developed a Blazor Server Compliance Management System serving 200+ enterprise users.",
+      "Reduced page load times by 35% through front-end optimization and database indexing.",
+      "Improved maintainability by refactoring legacy logic and implementing unit test coverage over 80%.",
+      "Collaborated across teams to deliver bi-weekly releases, ensuring 100% sprint goal completion rate."
     ]
   },
   {
-    title: "Junior Developer",
-    company: "StartUp Co.",
-    period: "2018 - 2020",
-    description: "Started career working on frontend and backend features for startup products.",
+    title: ".NET Developer",
+    company: "Software Mind (Bettech / Pulsebet)",
+    location: "Chișinău, Republic of Moldova",
+    period: "2022 - 2023",
+    description: "Developed and maintained Sports Betting web application.",
     achievements: [
-      "Shipped features used by 10k+ users",
-      "Learned modern development practices",
-      "Contributed to product roadmap"
+      "Designed and implemented 20+ betting features using ASP.NET Core, EF Core, and PostgreSQL.",
+      "Increased platform stability by 40% through optimized query execution and service refactoring.",
+      "Reduced defect rate by 25% via proactive code review and integration testing.",
+      "Migrated legacy modules to RESTful APIs, cutting system response times from 2.8s to under 1s."
+    ]
+  },
+  {
+    title: "QA Automation Engineer",
+    company: "Allied Testing",
+    location: "Chișinău, Republic of Moldova",
+    period: "2019 - 2022",
+    description: "Designed and developed UI automation testing solution frameworks.",
+    achievements: [
+      "Built an automation framework in C# using SpecFlow and NUnit, reducing manual testing effort by 60%.",
+      "Created 500+ automated regression test cases integrated into CI/CD pipelines.",
+      "Reduced bug detection time by 40% through early automation in the development cycle.",
+      "Mentored 3 junior QA engineers, improving team productivity and test quality consistency."
     ]
   }
 ];
@@ -45,11 +64,11 @@ const Experience = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Work Experience</h2>
           <p className="text-muted-foreground text-lg">My professional journey</p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto space-y-6">
           {experiences.map((exp, idx) => (
-            <Card 
-              key={idx} 
+            <Card
+              key={idx}
               className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-slide-up border-l-4 border-l-primary"
               style={{ animationDelay: `${idx * 150}ms` }}
             >
@@ -62,11 +81,11 @@ const Experience = () => {
                     <h3 className="text-xl font-semibold">{exp.title}</h3>
                     <span className="text-sm text-muted-foreground">{exp.period}</span>
                   </div>
-                  <p className="text-primary font-medium mb-3">{exp.company}</p>
-                  <p className="text-muted-foreground mb-4">{exp.description}</p>
+                  <p className="text-primary font-medium mb-3 text-lg">{exp.company} - {exp.location}</p>
+                  <p className="text-muted-foreground mb-4 text-lg">{exp.description}</p>
                   <ul className="space-y-2">
                     {exp.achievements.map((achievement, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm">
+                      <li key={i} className="flex items-center gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-accent" />
                         {achievement}
                       </li>
