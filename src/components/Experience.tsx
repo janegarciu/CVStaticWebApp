@@ -10,7 +10,7 @@ const experiences = [
     description: "Developed and maintained new and existing features for an eCommerce microservices project.",
     achievements: [
       "Delivered 10+ new features for an eCommerce microservices platform using .NET 9, ASP.NET Core, and MSSQL.",
-      "Optimized API performance using caching and async patterns, reducing request latency by 40%",
+      "Optimized API performance using indexes, caching and async patterns, reducing request latency by 40%",
       "Built 15+ Blazor UI components following Figma designs, increasing user interaction speed by 25%.",
       "Monitored distributed systems with Grafana and ServicePulse, improving system observability."
     ]
@@ -35,7 +35,7 @@ const experiences = [
     period: "2022 - 2023",
     description: "Developed and maintained Sports Betting web application.",
     achievements: [
-      "Designed and implemented 20+ betting features using ASP.NET Core, EF Core, and PostgreSQL.",
+      "Designed and implemented 10+ betting features using ASP.NET Core, EF Core, and PostgreSQL.",
       "Increased platform stability by 40% through optimized query execution and service refactoring.",
       "Reduced defect rate by 25% via proactive code review and integration testing.",
       "Migrated legacy modules to RESTful APIs, cutting system response times from 2.8s to under 1s."
@@ -49,7 +49,7 @@ const experiences = [
     description: "Designed and developed UI automation testing solution frameworks.",
     achievements: [
       "Built an automation framework in C# using SpecFlow and NUnit, reducing manual testing effort by 60%.",
-      "Created 500+ automated regression test cases integrated into CI/CD pipelines.",
+      "Created 60+ automated regression test cases integrated into CI/CD pipelines.",
       "Reduced bug detection time by 40% through early automation in the development cycle.",
       "Mentored 3 junior QA engineers, improving team productivity and test quality consistency."
     ]
